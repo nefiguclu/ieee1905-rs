@@ -1,8 +1,7 @@
 # ADR-0020: Isolate IEEE1905 Virtual Ethernet in a Dedicated Network Namespace
 
 ## Status
-Under discussion
-
+Accepted
 ## Context
 The IEEE1905 control plane uses a virtual Ethernet interface to send
 and receive CMDU traffic. Without network isolation, this interface
