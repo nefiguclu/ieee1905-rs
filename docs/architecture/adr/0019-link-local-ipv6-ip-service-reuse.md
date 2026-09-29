@@ -1,8 +1,7 @@
 # ADR-0019: Use Link-Local IPv6 on Control Interface to Reuse IP-Based Services
 
 ## Status
-Under discussion
-
+Accepted
 ## Context
 IEEE 1905 CMDU transport is fundamentally Ethernet-based, but some
 operational capabilities needed by the platform are already available
