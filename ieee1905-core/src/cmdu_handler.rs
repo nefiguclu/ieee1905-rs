@@ -658,7 +658,11 @@ impl CMDUHandler {
                 }
             }
         }
-        sent_query
+
+        // Even though the stack queried the sender itself, the EasyMesh application
+        // must also learn of the change (e.g. an Ethernet port change), so keep
+        // the notification for the AL SAP when an application is registered.
+        sent_query && !AlServiceAccessPoint::is_connected_and_enabled().await
     }
 
     /// Handles and logs TLVs for Link Metric Query.
